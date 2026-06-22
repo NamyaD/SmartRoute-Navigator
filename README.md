@@ -87,8 +87,6 @@ SmartRoute-Navigator/
 
 ## 👩‍💻 Author
 
-<div align="center">
-
 ### Namya Dutta
 
 🎓 B.Tech Computer Science Engineering  
