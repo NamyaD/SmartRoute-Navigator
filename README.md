@@ -75,20 +75,6 @@ SmartRoute-Navigator/
 
 ---
 
-## 👩‍💻 Author
-
-### Namya Dutta
-
-🎓 B.Tech Computer Science Engineering  
-🏫 Guru Nanak Dev University, Amritsar
-
-💻 Passionate about Data Structures & Algorithms, Software Development, and Problem Solving
-
-📌 Areas of Interest:
-- C++
-- Data Structures & Algorithms
-
-🔗 GitHub: https://github.com/itsmenamya05
 
 ##  Contributing
 
@@ -120,3 +106,17 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 
 </div>
+## 👩‍💻 Author
+
+### Namya Dutta
+
+🎓 B.Tech Computer Science Engineering  
+🏫 Guru Nanak Dev University, Amritsar
+
+💻 Passionate about Data Structures & Algorithms, Software Development, and Problem Solving
+
+📌 Areas of Interest:
+- C++
+- Data Structures & Algorithms
+
+🔗 GitHub: https://github.com/itsmenamya05
