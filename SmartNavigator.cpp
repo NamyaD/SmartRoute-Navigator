@@ -4,9 +4,6 @@
 #include <limits>
 #include <string>
 
-// ─────────────────────────────────────────────
-//  Constructor – preload a small demo graph
-// ─────────────────────────────────────────────
 SmartNavigator::SmartNavigator() {
     // Seed a few cities so the user can test right away
     graph_.addCity("Delhi");
@@ -25,9 +22,6 @@ SmartNavigator::SmartNavigator() {
     graph_.addRoad("Lucknow", "Mumbai",  1390, 1800, TrafficLevel::LOW);
 }
 
-// ─────────────────────────────────────────────
-//  run() – main application loop
-// ─────────────────────────────────────────────
 void SmartNavigator::run() {
     printBanner();
 
@@ -56,9 +50,6 @@ void SmartNavigator::run() {
     }
 }
 
-// ─────────────────────────────────────────────
-//  UI helpers
-// ─────────────────────────────────────────────
 void SmartNavigator::printBanner() const {
     std::cout << R"(
   ╔══════════════════════════════════════════════════╗
@@ -109,15 +100,13 @@ int SmartNavigator::getMenuChoice() const {
     return choice;
 }
 
-// ─────────────────────────────────────────────
-//  Input helpers
-// ─────────────────────────────────────────────
+
 std::string SmartNavigator::getCityInput(const std::string& prompt) const {
     std::string name;
     std::cout << "  " << prompt;
     std::getline(std::cin, name);
 
-    // Trim leading/trailing spaces
+  
     size_t start = name.find_first_not_of(" \t");
     size_t end   = name.find_last_not_of(" \t");
     if (start == std::string::npos) return "";
@@ -168,9 +157,6 @@ void SmartNavigator::printVisitOrder(const std::vector<std::string>& order,
     std::cout << "\n";
 }
 
-// ─────────────────────────────────────────────
-//  Feature handlers
-// ─────────────────────────────────────────────
 
 // 1. Add City
 void SmartNavigator::handleAddCity() {
@@ -290,8 +276,6 @@ void SmartNavigator::handleCompareBFSvsDijkstra() {
     if (!graph_.cityExists(dst)) {
         std::cout << "  [!] City \"" << dst << "\" not found.\n"; return;
     }
-
-    // ── BFS path: fewest hops, uses predecessor map ───────────────
     RouteResult bfsResult = graph_.bfsShortestPath(src, dst);
 
     std::cout << "\n  [BFS – fewest hops / unweighted]\n";
@@ -316,7 +300,7 @@ void SmartNavigator::handleCompareBFSvsDijkstra() {
     std::cout << "\n  [Dijkstra – shortest distance, weight-aware]\n";
     dijkResult.print();
 
-    // ── Side-by-side comparison ───────────────────────────────────
+    
     if (bfsResult.found && dijkResult.found) {
         std::cout << "\n  COMPARISON:\n";
         std::cout << "  BFS hops     : " << (bfsResult.path.size() - 1)
