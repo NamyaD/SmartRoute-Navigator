@@ -3,30 +3,24 @@
 
 #include "Graph.h"
 
-// ─────────────────────────────────────────────
-//  SmartNavigator
-//  Wraps the Graph and owns the console UI.
-//  Follows a simple MVC-like separation:
-//    Graph      → Model (data + algorithms)
-//    SmartNavigator → Controller + View (menu + display)
-// ─────────────────────────────────────────────
+
 class SmartNavigator {
 public:
     SmartNavigator();
 
-    // Entry point – starts the interactive menu loop
+    // Entry point
     void run();
 
 private:
     Graph graph_;
 
-    // ── Menu helpers ─────────────────────────
+    // Menu helpers 
     void printBanner()   const;
     void printMenu()     const;
     void printDivider()  const;
     int  getMenuChoice() const;
 
-    // ── Feature handlers (called from run()) ─
+    // Feature handlers (called from run()) 
     void handleAddCity();
     void handleAddRoad();
     void handleShortestRoute();
@@ -39,12 +33,12 @@ private:
     void handleSaveMap();
     void handleLoadMap();
 
-    // ── Input helpers ────────────────────────
+    // Input helpers 
     std::string getCityInput(const std::string& prompt) const;
     double      getPositiveDouble(const std::string& prompt) const;
     TrafficLevel getTrafficLevel() const;
 
-    // ── Display helpers ──────────────────────
+    // Display helpers
     void printCityList()     const;
     void printVisitOrder(const std::vector<std::string>& order,
                          const std::string& label) const;
