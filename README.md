@@ -75,55 +75,6 @@ SmartRoute-Navigator/
 
 ---
 
-## 🚀 Installation
-
-### Prerequisites
-- C++ Compiler (g++)
-- VS Code / CodeBlocks / CLion
-
-### Clone Repository
-
-```bash
-git clone https://github.com/NamyaD/SmartRoute-Navigator.git
-```
-
-### Compile
-
-```bash
-g++ main.cpp Graph.cpp SmartNavigator.cpp -o SmartRouteNavigator
-```
-
-### Run
-
-```bash
-./SmartRouteNavigator
-```
-
-## 📝 Sample Usage
-
-### Example Input
-
-```text
-Source City: Amritsar
-Destination City: Jalandhar
-```
-
-### Example Output
-
-```text
-Shortest Route:
-Amritsar -> Beas -> Jalandhar
-
-Distance: 82 km
-```
-
-## 🚀 Future Enhancements
-
-- GUI Support
-- Real-time Traffic Analysis
-- Interactive Map Visualization
-- GPS Coordinate Support
-
 
 ##  Contributing
 
