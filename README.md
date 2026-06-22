@@ -90,4 +90,33 @@ SmartRoute-Navigator/
 
 🔗 GitHub: https://github.com/itsmenamya05
 
+##  Contributing
+
+Contributions are welcome!
+
+### Getting Started
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push your branch
+5. Open a Pull Request
+
+### Good First Issues
+
+Check the Issues tab for beginner-friendly tasks labeled:
+
+- good first issue
+- enhancement
+- help wanted
+
+---
+
+## License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
+---
+
+
 </div>
