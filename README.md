@@ -70,8 +70,6 @@ This project helped me strengthen my understanding of graph-based problem solvin
 ---
 
 ## 📁 Project Structure
-
-```text
 SmartRoute-Navigator/
 │
 ├── README.md
@@ -85,3 +83,23 @@ SmartRoute-Navigator/
     ├── main-menu.png
     ├── shortest-route.png
     └── full-map.png
+---
+
+## 👩‍💻 Author
+
+<div align="center">
+
+### Namya Dutta
+
+🎓 B.Tech Computer Science Engineering  
+🏫 Guru Nanak Dev University, Amritsar
+
+💻 Passionate about Data Structures & Algorithms, Software Development, and Problem Solving
+
+📌 Areas of Interest:
+- C++
+- Data Structures & Algorithms
+
+🔗 GitHub: https://github.com/itsmenamya05
+
+</div>
