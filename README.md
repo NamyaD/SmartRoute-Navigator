@@ -23,13 +23,6 @@
 
 ---
 
-## 📸 Project Preview
-
-<p align="center">
-  <img src="./screenshots/main-menu.png" width="800" alt="Main Menu Screenshot"/>
-</p>
-
----
 
 ## 💡 Why I Built This
 
@@ -79,10 +72,7 @@ SmartRoute-Navigator/
 ├── SmartNavigator.h
 ├── SmartNavigator.cpp
 ├── sample_map.txt
-└── screenshots/
-    ├── main-menu.png
-    ├── shortest-route.png
-    └── full-map.png
+
 ---
 
 ## 👩‍💻 Author
