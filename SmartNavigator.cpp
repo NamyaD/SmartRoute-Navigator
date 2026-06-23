@@ -86,18 +86,41 @@ void SmartNavigator::printDivider() const {
 }
 
 int SmartNavigator::getMenuChoice() const {
-    int choice = -1;
-    std::cout << "  Enter choice: ";
-    std::cin >> choice;
+    std::string input;
 
-    // Clear bad input
-    if (std::cin.fail()) {
-        std::cin.clear();
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        return -1;
+    while (true) {
+        std::cout << "  Enter choice: ";
+        std::getline(std::cin, input);
+
+        // Empty input
+        if (input.empty()) {
+            std::cout << "  [error] Input cannot be empty. Please enter a whole number between 0 and 11.\n";
+            continue;
+        }
+
+        // character has to be a digit
+        bool valid = true;
+        for (char c : input) {
+            if (!std::isdigit(c)) {
+                valid = false;
+                break;
+            }
+        }
+
+        if (!valid) {
+            std::cout << "  [error] Invalid input. Please enter a whole number between 0 and 11.\n";
+            continue;
+        }
+
+        int choice = std::stoi(input);
+
+        if (choice < 0 || choice > 11) {
+            std::cout << "  [error] Invalid menu option. Please enter a whole number between 0 and 11.\n";
+            continue;
+        }
+
+        return choice;
     }
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-    return choice;
 }
 
 
@@ -130,13 +153,25 @@ double SmartNavigator::getPositiveDouble(const std::string& prompt) const {
 }
 
 TrafficLevel SmartNavigator::getTrafficLevel() const {
-    std::cout << "  Traffic level (1=LOW, 2=MEDIUM, 3=HIGH): ";
-    int t = 1;
-    std::cin >> t;
-    std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-    if (t == 3) return TrafficLevel::HIGH;
-    if (t == 2) return TrafficLevel::MEDIUM;
-    return TrafficLevel::LOW;
+    std::string input;
+
+    while (true) {
+        std::cout << "  Traffic level (1=LOW, 2=MEDIUM, 3=HIGH): ";
+        std::getline(std::cin, input);
+
+        if (input == "1")
+            return TrafficLevel::LOW;
+
+        if (input == "2")
+            return TrafficLevel::MEDIUM;
+
+        if (input == "3")
+            return TrafficLevel::HIGH;
+
+        std::cout
+            << "  [error] Invalid traffic level. "
+            << "Please enter 1 (LOW), 2 (MEDIUM), or 3 (HIGH).\n";
+    }
 }
 
 void SmartNavigator::printCityList() const {
