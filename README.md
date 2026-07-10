@@ -81,12 +81,6 @@ SmartRoute-Navigator/
 - C++ Compiler (g++)
 - VS Code / CodeBlocks / CLion
 
-### Clone Repository
-
-```bash
-git clone https://github.com/NamyaD/SmartRoute-Navigator.git
-```
-
 ### Compile
 
 ```bash
