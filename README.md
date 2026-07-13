@@ -57,7 +57,6 @@ This project helped me strengthen my understanding of graph-based problem solvin
 - Priority Queue / Min Heap
 - Hash Map
 - Sorting
-- Path Reconstruction
 - File Handling
 
 ---
