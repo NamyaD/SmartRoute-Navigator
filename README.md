@@ -30,7 +30,6 @@ I built SmartRoute Navigator to bridge the gap between theoretical Data Structur
 
 This project helped me strengthen my understanding of graph-based problem solving, object-oriented design, STL containers, priority queues, and file handling while building a modular software system.
 
----
 
 ## ⚡ Features
 
